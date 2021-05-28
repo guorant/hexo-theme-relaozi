@@ -161,6 +161,14 @@
             <% } %>
         </div>
     </div>
+    
+    <% if (config.markdown && config.markdown.plugins && config.markdown.plugins.includes('markdown-it-katex')) { %>
+        <%- partial('_partial/katex') %>
+    <% } %>
+
+    <% if (theme.mermaid && theme.mermaid.enable) { %>
+        <%- partial('_partial/mermaid') %>
+    <% } %>
 
     <% if (theme.gitalk && theme.gitalk.enable) { %>
         <%- partial('_partial/gitalk') %>

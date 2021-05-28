@@ -133,11 +133,12 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/blinkfox
-  email: 1181062873@qq.com
+  github:  https://github.com/yujunlong2000
+  email: 124888876@qq.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: 1181062873
+  wechat: chiyushanren
+  qq: 124888876
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
   rss: true # true、false
@@ -291,6 +292,7 @@ gitalk:
     clientId:
     clientSecret:
   admin:
+  proxy: https://netnr-proxy.cloudno.de/ # default https://cors-anywhere.herokuapp.com/corsdemo/
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -402,6 +404,7 @@ baiduPush: true
 libs:
   css:
     matery: /css/matery.css
+    markdown: /css/markdown.css
     mycss: /css/my.css
     fontAwesome: /libs/awesome/css/all.css # V5.11.1
     materialize: /libs/materialize/materialize.min.css # 1.0.0
@@ -612,3 +615,12 @@ bbtime:
  appId: # 你的appId
  appKey: # 你的appKey
  serverURLs: # https://你的api
+
+# mermaid chart
+mermaid: ## mermaid url https://github.com/knsv/mermaid
+  enable: true  # default true
+  version: "7.1.2" # default v7.1.2
+  # theme: forest # Available themes: default | dark | forest | neutral
+  options:  # find more api options from https://github.com/knsv/mermaid/blob/master/src/mermaidAPI.js
+    #startOnload: true  // default true
+

@@ -22,6 +22,12 @@
     </a>
 <% } %>
 
+<% if (theme.socialLink.wechat) { %>
+    <a href="<%= theme.socialLink.wechat %>" class="tooltipped" target="_blank" data-tooltip="关注我的微信: <%= theme.socialLink.wechat %>" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
+    </a>
+<% } %>
+
 <% if (theme.socialLink.qq) { %>
     <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=<%= theme.socialLink.qq %>" class="tooltipped" target="_blank" data-tooltip="QQ联系我: <%= theme.socialLink.qq %>" data-position="top" data-delay="50">
         <i class="fab fa-qq"></i>
