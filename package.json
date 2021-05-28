@@ -1,0 +1,25 @@
+{
+  "name": "hexo-theme-relaozi",
+  "version": "1.0.0",
+  "description": "This is a Hexo blog theme with 'Material Design' and responsive design.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guorant/hexo-theme-relaozi.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "relaozi"
+  ],
+  "author": "Yujun Long",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guorant/hexo-theme-relaozi/issues"
+  },
+  "homepage": "https://github.com/guorant/hexo-theme-relaozi#readme",
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=10.9.0"
+  }
+}
