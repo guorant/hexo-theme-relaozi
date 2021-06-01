@@ -1,8 +1,8 @@
-# hexo-theme-matery
+# hexo-theme-relaozi
 
-[![HitCount](http://hits.dwyl.io/blinkfox/hexo-theme-matery.svg)](http://hits.dwyl.io/blinkfox/hexo-theme-matery) [![Gitter](https://img.shields.io/gitter/room/blinkfox/hexo-theme-matery.svg)](https://gitter.im/hexo-theme-matery/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/issues) [![GitHub license](https://img.shields.io/github/license/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%205.0.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/network) [![GitHub stars](https://img.shields.io/github/stars/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/stargazers)
+[![HitCount](http://hits.dwyl.io/guorant/hexo-theme-relaozi.svg)](http://hits.dwyl.io/guorant/hexo-theme-relaozi) [![Gitter](https://img.shields.io/gitter/room/guorant/hexo-theme-relaozi.svg)](https://gitter.im/hexo-theme-relaozi/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/guorant/hexo-theme-relaozi.svg)](https://github.com/guorant/hexo-theme-relaozi/issues) [![GitHub license](https://img.shields.io/github/license/guorant/hexo-theme-relaozi.svg)](https://github.com/guorant/hexo-theme-relaozi/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/guorant/hexo-theme-relaozi/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%205.0.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/guorant/hexo-theme-relaozi.svg)](https://github.com/guorant/hexo-theme-relaozi/network) [![GitHub stars](https://img.shields.io/github/stars/guorant/hexo-theme-relaozi.svg)](https://github.com/guorant/hexo-theme-relaozi/stargazers)
 
-[🇺🇸English Document](README.md) | [国内访问示例 (http://blinkfox.com)](http://blinkfox.com) | [Github 部署演示示例 (https://blinkfox.github.io)](https://blinkfox.github.io) 
+[🇺🇸English Document](README.md) | [国内访问示例 (http://www.lz5000.com)](http://www.lz5000.com) | [Github 部署演示示例 (https://lz5000.github.io)](https://lz5000.github.io) 
 
 QQ 交流群1（已满）: [`926552981`](https://jq.qq.com/?_wv=1027&k=5zMDYHT) | QQ 交流群2（已满）: [`971887688`](https://jq.qq.com/?_wv=1027&k=53q2Ayp) | QQ 交流群3（推荐）: [`670694035`](https://qm.qq.com/cgi-bin/qm/qr?k=fC1-kU-_aTn4q-JQq4GsYKr4WcKdgfGa&jump_from=webapi)
 
@@ -32,8 +32,9 @@ QQ 交流群1（已满）: [`926552981`](https://jq.qq.com/?_wv=1027&k=5zMDYHT) 
 
 ## 贡献者
 
-感谢下面列出的贡献者，没有他们，hexo-theme-matery 不会这么完美。
+感谢下面列出的贡献者，没有他们，hexo-theme-relaozi 不会这么完美。
 
+- [@blinkfox](https://github.com/blinkfox)
 - [@HarborZeng](https://github.com/HarborZeng)
 - [@shw2018](https://github.com/shw2018)
 - [@L1cardo](https://github.com/L1cardo)
@@ -43,19 +44,19 @@ QQ 交流群1（已满）: [`926552981`](https://jq.qq.com/?_wv=1027&k=5zMDYHT) 
 
 本主题**推荐你使用 Hexo 5.0.0 及以上的版本**。如果，你已经有一个自己的 [Hexo](https://hexo.io/zh-cn/) 博客了，建议你将 Hexo 升级到最新稳定的版本。
 
-点击 [这里](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) 下载 `master` 分支的最新稳定版的代码，解压缩后，将 `hexo-theme-matery` 的文件夹复制到你 Hexo 的 `themes` 文件夹中即可。
+点击 [这里](https://codeload.github.com/guorant/hexo-theme-relaozi/zip/master) 下载 `master` 分支的最新稳定版的代码，解压缩后，将 `hexo-theme-relaozi` 的文件夹复制到你 Hexo 的 `themes` 文件夹中即可。
 
 当然你也可以在你的 `themes` 文件夹下使用 `git clone` 命令来下载:
 
 ```bash
-git clone https://github.com/blinkfox/hexo-theme-matery.git
+git clone https://github.com/guorant/hexo-theme-relaozi.git
 ```
 
 ## 配置
 
 ### 切换主题
 
-修改 Hexo 根目录下的 `_config.yml` 的  `theme` 的值：`theme: hexo-theme-matery`
+修改 Hexo 根目录下的 `_config.yml` 的  `theme` 的值：`theme: hexo-theme-relaozi`
 
 #### `_config.yml` 文件的其它修改建议:
 
@@ -302,7 +303,7 @@ prismjs:
   tab_replace: ''
 ```
 
-主题中默认的 `prismjs` 主题是 `Tomorrow Night`，如果你想定制自己的主题，可以前往 [prismjs 下载页面](https://prismjs.com/download.html) 定制下载自己喜欢的主题 `css` 文件，然后将此 css 主题文件取名为 `prism.css`，替换掉 `hexo-theme-matery` 主题文件夹中的 `source/libs/prism/prism.css` 文件即可。
+主题中默认的 `prismjs` 主题是 `Tomorrow Night`，如果你想定制自己的主题，可以前往 [prismjs 下载页面](https://prismjs.com/download.html) 定制下载自己喜欢的主题 `css` 文件，然后将此 css 主题文件取名为 `prism.css`，替换掉 `hexo-theme-relaozi` 主题文件夹中的 `source/libs/prism/prism.css` 文件即可。
 
 ### 搜索
 
@@ -619,4 +620,4 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 
 ## 版本变更记录
 
-参见 [CHANGELOG.md](https://github.com/blinkfox/hexo-theme-matery/blob/master/CHANGELOG.md)
+参见 [CHANGELOG.md](https://github.com/guorant/hexo-theme-relaozi/blob/master/CHANGELOG.md)

@@ -42,10 +42,10 @@ menu:
 # Website start time.
 # 站点运行开始时间.
 time:
-  enable: false
-  year: 2019 # 年份
-  month: 06 # 月份
-  date: 28 # 日期
+  enable: true
+  year: 2018 # 年份
+  month: 11 # 月份
+  date: 18 # 日期
   hour: 00 # 小时
   minute: 00 # 分钟
   second: 00 # 秒
@@ -59,15 +59,15 @@ cover:
   duration: 120 # 切换延迟时间. Switching delay time.
   intervalTime: 5000 # 自动切换下一张的间隔时间. Automatically switch the interval of the next one.
   useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
-  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
+  # useConfig 使用方式: 将主题 hexo-theme-relaozi/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
 
 # index page dream text,
 # 配置首页显示"梦想"的语句.
 dream:
   enable: true
   showTitle: true
-  title: 我的梦想
-  text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+  title: 回归老子
+  text: 路漫漫其修远兮，吾将上下而求索。亦作心之所善兮，虽九死其犹未悔。长太息以掩涕兮，哀民生之多艰。宁溘死以流亡兮，余不忍为此态也！——屈原《离骚》
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -113,7 +113,7 @@ recommend:
   enable: true
   showTitle: true
   useConfig: false # 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性
-  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
+  # useConfig 使用方式: 将主题 hexo-theme-relaozi/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
@@ -127,7 +127,7 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: https://github.com/guorant/hexo-theme-relaozi
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
@@ -163,7 +163,7 @@ code:
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
   enable: true
-  title: 你的赏识是我前进的动力
+  title: 您的付出让我们又向前迈进了一小步
   wechat: /medias/reward/wechat.png
   alipay: /medias/reward/alipay.jpg
 
@@ -206,8 +206,8 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: Software Engineer
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  career: Software and Soul Engineer
+  introduction: 教育不是灌输，而是点燃火焰。--苏格拉底
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -215,21 +215,21 @@ profile:
 myProjects:
   enable: true
   data:
-    hexo-theme-matery:
+    hexo-theme-relaozi:
       icon: fas fa-file-alt
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
+      url: http://github.com/guorant/hexo-theme-relaozi
       desc: This is a Hexo blog theme with 'Material Design' and responsive design.
-    Fenix:
-        icon: fas fa-database
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/fenix
-        desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
-    typora-vue-theme:
-        icon: fas fa-file-alt
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
-        desc: This is a typora theme inspired by Vue document style.
+    lz5000:
+      icon: fas fa-database
+      iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+      url: https://www.lz5000.com
+      desc: 老子简短的五千言到底在讲什么？他所演绎的“道”到底是什么？让我们一起来重新认识那个质朴无华的老者。
+    sx5000:
+      icon: fas fa-file-alt
+      iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+      url: https://www.sx5000.com
+      desc: 站在开放而包容的视角下，让我们拨开历史的迷雾，透过文字的桎梏，一起来感受古今中外智者眼中的世界。
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.
@@ -237,24 +237,24 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
+    C/C++:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
+      percent: 80%
     JavaScript:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
-      percent: 80%
-    HTML5:
+      percent: 75%
+    模型设计:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
       percent: 80%
-    CSS:
+    区块链:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
       percent: 70%
-    SQL:
+    老子《德道经》:
       background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
       percent: 90%
-    程序设计:
+    传统文化:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 75%
+      percent: 60%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
@@ -347,12 +347,6 @@ changyan:
   enable: false
   appId:
   conf:
-# Whether to display fork me on github icon and link, default true, You can change it to your repo address
-# 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
-githubLink:
-  enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
-  title: Fork Me
 
 # The configuration of the Twikoo comment module is not activated by default.
 # To use it, activate the configuration item and set envId.
@@ -363,6 +357,13 @@ twikoo:
   envId: twikoo-1gs9l0fb17e7897a # 环境 ID，搭建教程：https://twikoo.js.org/quick-start.html
   # region: ap-guangzhou # 环境地域，默认为 ap-shanghai
   # path: 'window.location.pathname' # 自定义文章路径
+    
+# Whether to display fork me on github icon and link, default true, You can change it to your repo address
+# 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
+githubLink:
+  enable: true
+  url: https://github.com/guorant/hexo-theme-relaozi
+  title: Fork Me
 
 # The password verification feature of read post. To use this feature,
 # activate the configuration item and write the 'password' key and Cipher in the post's Front-matter.
@@ -552,6 +553,8 @@ subtitle:
   sub:
     - 从来没有真正的绝境, 只有心灵的迷途
     - Never really desperate, only the lost of the soul
+    - 不要企图无所不知, 否则你将一无所知
+    - No try to know everything, or you will know nothing
 
 # 手机二级菜单.
 navMenu:

@@ -1,8 +1,8 @@
-# hexo-theme-matery
+# hexo-theme-relaozi
 
-[![HitCount](http://hits.dwyl.io/blinkfox/hexo-theme-matery.svg)](http://hits.dwyl.io/blinkfox/hexo-theme-matery) [![Gitter](https://img.shields.io/gitter/room/blinkfox/hexo-theme-matery.svg)](https://gitter.im/hexo-theme-matery/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/issues) [![GitHub license](https://img.shields.io/github/license/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%205.0.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/network) [![GitHub stars](https://img.shields.io/github/stars/blinkfox/hexo-theme-matery.svg)](https://github.com/blinkfox/hexo-theme-matery/stargazers)
+[![HitCount](http://hits.dwyl.io/guorant/hexo-theme-relaozi.svg)](http://hits.dwyl.io/guorant/hexo-theme-relaozi) [![Gitter](https://img.shields.io/gitter/room/guorant/hexo-theme-relaozi.svg)](https://gitter.im/hexo-theme-relaozi/Lobby?utm_source=badge) [![GitHub issues](https://img.shields.io/github/issues/guorant/hexo-theme-relaozi.svg)](https://github.com/guorant/hexo-theme-relaozi/issues) [![GitHub license](https://img.shields.io/github/license/guorant/hexo-theme-relaozi.svg)](https://github.com/guorant/hexo-theme-relaozi/blob/master/LICENSE) [![Download](https://img.shields.io/badge/downloads-master-green.svg)](https://codeload.github.com/guorant/hexo-theme-relaozi/zip/master) [![Hexo Version](https://img.shields.io/badge/hexo-%3E%3D%205.0.0-blue.svg)](http://hexo.io) [![GitHub forks](https://img.shields.io/github/forks/guorant/hexo-theme-relaozi.svg)](https://github.com/guorant/hexo-theme-relaozi/network) [![GitHub stars](https://img.shields.io/github/stars/guorant/hexo-theme-relaozi.svg)](https://github.com/guorant/hexo-theme-relaozi/stargazers)
 
-[🇨🇳中文说明](README_CN.md) | [国内访问示例(http://blinkfox.com)](http://blinkfox.com) | [Github Deploy Demo(https://blinkfox.github.io)](https://blinkfox.github.io)
+[🇨🇳中文说明](README_CN.md) | [国内访问示例(http://www.lz5000.com)](http://www.lz5000.com) | [Github Deploy Demo(https://lz5000.github.io)](https://lz5000.github.io)
 
 > This is a Hexo blog theme with 'Material Design' and responsive design.
 
@@ -30,8 +30,9 @@
 
 ## Contributor
 
-Thanks to these contributors, without whom, hexo-theme-matery won't be this perfect.
+Thanks to these contributors, without whom, hexo-theme-relaozi won't be this perfect.
 
+- [@blinkfox](https://github.com/blinkfox)
 - [@HarborZeng](https://github.com/HarborZeng)
 - [@shw2018](https://github.com/shw2018)
 - [@L1cardo](https://github.com/L1cardo)
@@ -39,22 +40,22 @@ Thanks to these contributors, without whom, hexo-theme-matery won't be this perf
 
 ## Download
 
-hexo-theme-matery **recommend you to use Hexo 5.0.0 and above**. If you already have your own [Hexo](https://hexo.io/zh-cn/) blog, I suggest you upgrade Hexo to the latest stable version.
+hexo-theme-relaozi **recommend you to use Hexo 5.0.0 and above**. If you already have your own [Hexo](https://hexo.io/zh-cn/) blog, I suggest you upgrade Hexo to the latest stable version.
 
-Click [here](https://codeload.github.com/blinkfox/hexo-theme-matery/zip/master) to download master branch of the last stable version of the code.After decompressing, copy the `hexo-theme-matery` folder
+Click [here](https://codeload.github.com/guorant/hexo-theme-relaozi/zip/master) to download master branch of the last stable version of the code.After decompressing, copy the `hexo-theme-relaozi` folder
 to your `themes` folder of your Hexo blog project.
 
 Of course, you can use `git clone` to download in your `themes` folder.
 
 ```bash
-git clone https://github.com/blinkfox/hexo-theme-matery.git
+git clone https://github.com/guorant/hexo-theme-relaozi.git
 ```
 
 ## Configuration
 
 ### Modify theme
 
-Modify the value of `theme` in `_config.yml` of Hexo's root folder: `theme: hexo-theme-matery`.
+Modify the value of `theme` in `_config.yml` of Hexo's root folder: `theme: hexo-theme-relaozi`.
 
 #### Suggestions for other changes to the `_config.yml`:
 
@@ -279,7 +280,7 @@ menu:
 
 ### Code Highlight
 
-Starting from Hexo 5.0.0 version, it comes with support for `prismjs` code syntax highlighting, and hexo-theme-matery has been modified to support it.
+Starting from Hexo 5.0.0 version, it comes with support for `prismjs` code syntax highlighting, and hexo-theme-relaozi has been modified to support it.
 
 If the plugin of `hexo-prism-plugin` has been installed in your blog, then you need to execute `npm uninstall hexo-prism-plugin` to uninstall it, otherwise there will be `&#123;`, `&#125;` escape characters in the code block of the post.
 
@@ -300,7 +301,7 @@ prismjs:
   tab_replace: ''
 ```
 
-The default `prismjs` theme in the hexo-theme-matery is `Tomorrow Night`, if you want to customize your own theme, you can go to [prismjs download page](https://prismjs.com/download.html) to download yourself favorite theme `css` file, then name this css theme file `prism.css`, replace the `source/libs/prism/prism.css` file in the theme folder of `hexo-theme-matery`.
+The default `prismjs` theme in the hexo-theme-relaozi is `Tomorrow Night`, if you want to customize your own theme, you can go to [prismjs download page](https://prismjs.com/download.html) to download yourself favorite theme `css` file, then name this css theme file `prism.css`, replace the `source/libs/prism/prism.css` file in the theme folder of `hexo-theme-relaozi`.
 
 ### Search
 
@@ -613,4 +614,4 @@ There are 24 featured pictures in `/source/medias/featureimages`, you can add or
 
 ## Changelog
 
-See [CHANGELOG.md](https://github.com/blinkfox/hexo-theme-matery/blob/master/CHANGELOG.md)
+See [CHANGELOG.md](https://github.com/guorant/hexo-theme-relaozi/blob/master/CHANGELOG.md)
