@@ -2,7 +2,7 @@
 
 @charset "utf-8";
 
-/* typora relaozi style */
+/* derive from typora relaozi style */
 @font-face {
     font-family: '隶书';
     src: url('/font/标准隶书.ttf') format('truetype');
@@ -47,10 +47,6 @@ content {
     min-height: calc(100vh - 6em);
     -webkit-font-smoothing: antialiased;
     font-size: 16px;
-}
-
-.typora-node #write {
-    min-height: calc(100% - 6em);
 }
 
 /* meta - message - block */
@@ -328,8 +324,8 @@ html {
     font-weight: bolder;
 }
 
-#write h1, #write-h1 {
-    font-size: 2.4em;
+#articleContent h1, #articleContent-h1 {
+    font-size: 2.2em;
     text-align: center;
     padding-bottom: 0.3em;
     border-bottom: 3px double #eee;
@@ -394,11 +390,6 @@ html {
     border-bottom: none;
 }
 
-#write em {
-    font-weight: inherit;
-    font-style: inherit;
-}
-
 li > p {
     margin-bottom: 0 !important;
 }
@@ -431,10 +422,6 @@ a.md-toc-inner {
 
 .mac-seamless-mode #write {
     min-height: calc(100vh - 6em - 20px);
-}
-
-.typora-quick-open-item.active {
-    color: var(--active-file-text-color);
 }
 
 *.in-text-selection, ::selection {
