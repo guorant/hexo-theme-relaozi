@@ -1,8 +1,18 @@
-/* Here is your custom css styles. */
+/* Here is your markdown css styles. */
 
 @charset "utf-8";
 
-/* techo-typora style */
+/* typora relaozi style */
+@font-face {
+    font-family: '隶书';
+    src: url('/font/标准隶书.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '篆书';
+    src: url('/font/方正小篆体.ttf') format('truetype');
+}
+
 :root {
     --active-file-bg-color: #dadada;
     --active-file-bg-color: rgba(32, 43, 51, 0.63);
@@ -136,16 +146,15 @@ audio, canvas, video {
 }
 
 body, button, input, select, textarea {
-    font: 400 1em/1.8 "font/han.otf", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+    font: 400 1em/1.8 "Monaco", "隶书", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
 }
 
 body {
-    font-family: "font/han.otf", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+    font-family: "Monaco", "隶书", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "font/han.otf", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
-    /*font-family: "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;*/
+    font-family: "Monaco", "隶书", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
     -webkit-font-smoothing: initial;
     font-weight: 100;
     color: var(--text-color);
@@ -155,12 +164,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 em {
-    font-family: "font/han.otf", Georgia-Italic, STSongti-SC-Light, serif;
+    font-family: "Monaco", "隶书", Georgia-Italic, STSongti-SC-Light, serif;
 }
 
 strong em,
 em strong {
-    font-family: "font/han.otf", Georgia-BoldItalic, STSongti-SC-Regular, serif;
+    font-family: "Monaco", "隶书", Georgia-BoldItalic, STSongti-SC-Regular, serif;
 }
 
 button::-moz-focus-inner,
@@ -308,7 +317,7 @@ strong, b {
 }
 
 html {
-    font-family: "font/han.otf", PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+    font-family: "Monaco", "隶书", PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6,
@@ -321,16 +330,21 @@ html {
 
 #write h1, #write-h1 {
     font-size: 2.4em;
+    text-align: center;
     padding-bottom: 0.3em;
     border-bottom: 3px double #eee;
 }
 
 #write h2, #write-h2 {
     font-size: 1.8em;
+    padding-bottom: 0.3em;
+    border-bottom: 3px double #eee;
 }
 
 #write h3, #write-h3 {
     font-size: 1.6em;
+    padding-bottom: 0.3em;
+    border-bottom: 3px double #eee;
 }
 
 #write h4, #write-h4 {
