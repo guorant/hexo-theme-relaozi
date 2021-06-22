@@ -1,5 +1,15 @@
 /*全局基础样式*/
 /*小屏幕下(手机类)的样式*/
+@font-face {
+    font-family: '隶书';
+    src: url('/font/标准隶书.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '篆书';
+    src: url('/font/方正小篆体.ttf') format('truetype');
+}
+
 @media only screen and (max-width: 601px) {
     .container {
         width: 95%;
@@ -296,6 +306,12 @@ header .brand-logo .logo-img {
 }
 
 header .brand-logo .logo-span {
+    font-family: "Monaco", "篆书", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
+    font-size: 1.6rem;
+}
+
+header .brand-logo .logo-span-lishu {
+    font-family: "Monaco", "隶书", "PingFang SC", "Lantinghei SC", "Microsoft Yahei", "Hiragino Sans GB", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans;
     font-size: 1.6rem;
 }
 

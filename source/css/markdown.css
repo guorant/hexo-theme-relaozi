@@ -3,15 +3,6 @@
 @charset "utf-8";
 
 /* derive from typora relaozi style */
-@font-face {
-    font-family: '隶书';
-    src: url('/font/标准隶书.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: '篆书';
-    src: url('/font/方正小篆体.ttf') format('truetype');
-}
 
 :root {
     --active-file-bg-color: #dadada;
