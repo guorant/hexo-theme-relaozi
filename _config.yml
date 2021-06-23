@@ -1,4 +1,5 @@
 # main title font default 篆书
+# 网站标题字体，默认为篆书
 title:
   # font: 隶书
 
@@ -555,10 +556,10 @@ subtitle:
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
   sub:
-    - 从来没有真正的绝境, 只有心灵的迷途
-    - Never really desperate, only the lost of the soul
     - 不要企图无所不知, 否则你将一无所知
     - No try to know everything, or you will know nothing
+    - 从来没有真正的绝境, 只有心灵的迷途
+    - Never really desperate, only the lost of the soul
 
 # 手机二级菜单.
 navMenu:
