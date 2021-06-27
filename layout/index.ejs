@@ -11,6 +11,17 @@
                     || theme.video.enable || theme.recommend.enable)) { %>
     <div id="indexCard" class="index-card">
         <div class="container ">
+
+            <% if (page.position && page.position == "top") { %>
+            <div class="card">
+                <div class="card-content">
+                    <div id="articleContent">
+                        <%- page.content %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+
             <div class="card">
                 <div class="card-content">
                     <% if (theme.dream.enable) { %>
@@ -32,6 +43,17 @@
                     <% } %>
                 </div>
             </div>
+
+            <% if (page.content && page.content.length > 0 && page.position != "top") { %>
+            <div class="card">
+                <div class="card-content">
+                    <div id="articleContent">
+                        <%- page.content %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+
         </div>
     </div>
     <% }%>

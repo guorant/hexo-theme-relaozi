@@ -4,6 +4,18 @@
 
     <%- partial('_widget/category-cloud') %>
 
+    <% if (page.content && page.content.length > 0) { %>
+    <div class="container ">
+        <div class="card">
+            <div class="card-content">
+                <div id="articleContent">
+                    <%- page.content %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% } %>
+
     <%
     var hashCode = function (str) {
         if (!str && str.length === 0) {
