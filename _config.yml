@@ -120,6 +120,14 @@ recommend:
   useConfig: false # 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性
   # useConfig 使用方式: 将主题 hexo-theme-relaozi/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
 
+# Whether to display the title of the recommended categories
+# 是否显示推荐分类的标题
+recommendCategory:
+  enable: true
+  showTitle: true
+  useConfig: false # 是否使用配置文件, 在 _data/recommendCategories.json 下配置推荐文章, false则会走分类配置的 top 属性
+  # useConfig 使用方式: 将主题 hexo-theme-relaozi/source/_data/recommendCategories.json 移动到 my-blog/source/_data/下修改配置即可
+
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
 favicon: /favicon.png

@@ -8,32 +8,34 @@
 
     <% if (page.current === 1
             && ((theme.dream.enable || theme.music.enable)
-                    || theme.video.enable || theme.recommend.enable)) { %>
+                    || theme.video.enable || theme.recommendCategory.enable || theme.recommend.enable
+                    || (page.content && page.content.length > 0))) { %>
     <div id="indexCard" class="index-card">
         <div class="container ">
-
-            <% if (page.position && page.position == "top") { %>
             <div class="card">
                 <div class="card-content">
+                    <% if (page.position && page.position == "top") { %>
                     <div id="articleContent">
                         <%- page.content %>
                     </div>
-                </div>
-            </div>
-            <% } %>
+                    <% } %>
 
-            <div class="card">
-                <div class="card-content">
                     <% if (theme.dream.enable) { %>
                         <%- partial('_widget/dream') %>
                     <% } %>
 
                     <% if (theme.music.enable && !theme.music.fixed) { %>
                         <%- partial('_widget/music') %>
-                        <% } %>
+                    <% } %>
 
                     <% if (theme.video.enable && ( theme.video.url || theme.video.iframeUrl ) ) { %>
                         <%- partial('_widget/video') %>
+                    <% } %>
+
+                    <% if (theme.recommendCategory.enable) { %>
+                    <div id="recommend-sections" class="recommend">
+                        <%- partial('_widget/recommend-category') %>
+                    </div>
                     <% } %>
 
                     <% if (theme.recommend.enable) { %>
@@ -41,19 +43,14 @@
                         <%- partial('_widget/recommend') %>
                     </div>
                     <% } %>
-                </div>
-            </div>
 
-            <% if (page.content && page.content.length > 0 && page.position != "top") { %>
-            <div class="card">
-                <div class="card-content">
+                    <% if (page.content && page.content.length > 0 && page.position != "top") { %>
                     <div id="articleContent">
                         <%- page.content %>
                     </div>
+                    <% } %>
                 </div>
             </div>
-            <% } %>
-
         </div>
     </div>
     <% }%>

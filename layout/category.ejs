@@ -4,13 +4,28 @@
 
     <%- partial('_widget/category-cloud') %>
 
-    <% if (page.content && page.content.length > 0) { %>
+    <% if (page.current === 1 && 
+        (page.content && page.content.length > 0 || (page.recommend || theme.recommend.enable))) { %>
     <div class="container ">
         <div class="card">
             <div class="card-content">
+                <% if (page.position && page.position == "top") { %>
                 <div id="articleContent">
                     <%- page.content %>
                 </div>
+                <% } %>
+                    
+                <% if (page.recommend || theme.recommend.enable) { %>
+                <div id="recommend-sections" class="recommend">
+                    <%- partial('_widget/category-recommend') %>
+                </div>
+                <% } %>
+
+                <% if (page.content && page.content.length > 0) { %>
+                <div id="articleContent">
+                    <%- page.content %>
+                </div>
+                <% } %>
             </div>
         </div>
     </div>
