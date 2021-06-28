@@ -80,8 +80,8 @@
     <% for (var i = 0; i < topCategoriesCount; i++) { %>
     <%
         var category = topCategories[i];
-        var grid = (i % 3 === 0) ? 's12' : 's12 m6';
-        var description = (i % 3 === 0) ? strip_html(category.content).substring(0, 85)
+        var grid = (i == 0) ? 's12' : 's12 m6';
+        var description = (i == 0) ? strip_html(category.content).substring(0, 85)
                 : strip_html(category.content).substring(0, 70);
         if (category.summary && category.summary.length > 0) {
             description = category.summary;

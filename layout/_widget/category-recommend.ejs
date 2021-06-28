@@ -76,8 +76,8 @@
     <% for (var i = 0; i < topPostsCount; i++) { %>
     <%
         var post = topPosts[i];
-        var grid = (i % 3 === 0) ? 's12' : 's12 m6';
-        var description = (i % 3 === 0) ? strip_html(post.content).substring(0, 85)
+        var grid = (i == 0) ? 's12' : 's12 m6';
+        var description = (i == 0) ? strip_html(post.content).substring(0, 85)
                 : strip_html(post.content).substring(0, 70);
         if (post.summary && post.summary.length > 0) {
             description = post.summary;
