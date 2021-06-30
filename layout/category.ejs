@@ -16,7 +16,7 @@
                     </div>
                     <% } %>
 
-                    <% if (page.recommend || theme.recommend.enable) { %>
+                    <% if (page.recommend !== false && (page.recommend || theme.recommend.enable)) { %>
                     <div id="recommend-sections" class="recommend">
                         <%- partial('_widget/category-recommend') %>
                     </div>
