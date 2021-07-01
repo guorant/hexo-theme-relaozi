@@ -1,0 +1,137 @@
+<%
+var hashCode = function (str) {
+    if (!str && str.length === 0) {
+        return 0;
+    }
+
+    var hash = 0;
+    for (var i = 0, len = str.length; i < len; i++) {
+        hash = ((hash << 5) - hash) + str.charCodeAt(i);
+        hash |= 0;
+    }
+    return hash;
+};
+
+var featureimg = '/medias/featureimages/0.jpg';
+var featureImages = theme.featureImages;
+%>
+
+    <div id = "<%= categoryId %>" class="row article-row">
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas <%- (page == prev) ? 'fa-dot-circle' : 'fa-chevron-left' %>"></i>&nbsp;<%= (page == prev) ? __('curr') : __('prev') %></div>
+            <div class="card">
+                <a href="<%- url_for(categoryId == 'index-category' ? prev.path : prev.path + '?' + categoryId) %>">
+                    <div class="card-image">
+                        <% if (prev.img) { %>
+                        <img src="<%- url_for(prev.img) %>" class="responsive-img" alt="<%= prev.title %>">
+                        <% } else { %>
+                        <%
+                            featureimg = featureImages[Math.abs(hashCode(prev.title) % featureImages.length)];
+                        %>
+                        <img src="<%- theme.jsDelivr.url %><%- url_for(featureimg) %>" class="responsive-img" alt="<%= prev.title %>">
+                        <% } %>
+                        <span class="card-title"><%= prev.title %></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        <% if (prev.summary && prev.summary.length > 0) { %>
+                            <%- prev.summary %>
+                        <% } else { %>
+                            <%- strip_html(prev.excerpt).substring(0, 120) %>
+                        <% } %>
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i><%= date(prev.date, config.date_format) %>
+                        </span>
+                        <span class="publish-author">
+                            <% if (prev.categories && prev.categories.length > 0) { %>
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            <% prev.categories.forEach(category => { %>
+                            <a href="<%- url_for(category.path + '?' + categoryId) %>" class="post-category">
+                                    <%- category.name %>
+                                </a>
+                            <% }); %>
+                            <% } else if (prev.author && prev.author.length > 0) { %>
+                            <i class="fas fa-user fa-fw"></i>
+                            <%- prev.author %>
+                            <% } else { %>
+                            <i class="fas fa-user fa-fw"></i>
+                            <%- config.author %>
+                            <% } %>
+                        </span>
+                    </div>
+                </div>
+                <% if(prev.tags && prev.tags.length > 0) { %>
+                <div class="card-action article-tags">
+                    <% prev.tags.forEach(tag => { %>
+                    <a href="<%- url_for(tag.path) %>">
+                        <span class="chip bg-color"><%= tag.name %></span>
+                    </a>
+                    <% }); %>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                <%= (page == next) ? __('curr') : __('next') %>&nbsp;<i class="fas <%- (page == prev) ? 'fa-dot-circle' : 'fa-chevron-right' %>"></i>
+            </div>
+            <div class="card">
+                <a href="<%- url_for(categoryId == 'index-category' ? prev.path : next.path + '?' + categoryId) %>">
+                    <div class="card-image">
+                        <% if (next.img) { %>
+                        <img src="<%- url_for(next.img) %>" class="responsive-img" alt="<%= next.title %>">
+                        <% } else { %>
+                        <%
+                            featureimg = featureImages[Math.abs(hashCode(next.title) % featureImages.length)];
+                        %>
+                        <img src="<%- theme.jsDelivr.url %><%- url_for(featureimg) %>" class="responsive-img" alt="<%= next.title %>">
+                        <% } %>
+                        <span class="card-title"><%= next.title %></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        <% if (next.summary && next.summary.length > 0) { %>
+                            <%- next.summary %>
+                        <% } else { %>
+                            <%- strip_html(next.excerpt).substring(0, 120) %>
+                        <% } %>
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i><%= date(next.date, config.date_format) %>
+                            </span>
+                        <span class="publish-author">
+                            <% if (next.categories && next.categories.length > 0) { %>
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            <% next.categories.forEach(category => { %>
+                            <a href="<%- url_for(category.path) %>" class="post-category">
+                                    <%- category.name %>
+                                </a>
+                            <% }); %>
+                            <% } else if (next.author && next.author.length > 0) { %>
+                            <i class="fas fa-user fa-fw"></i>
+                            <%- next.author %>
+                            <% } else { %>
+                            <i class="fas fa-user fa-fw"></i>
+                            <%- config.author %>
+                            <% } %>
+                        </span>
+                    </div>
+                </div>
+                <% if(next.tags && next.tags.length > 0) { %>
+                <div class="card-action article-tags">
+                    <% next.tags.forEach(tag => { %>
+                    <a href="<%- url_for(tag.path) %>">
+                        <span class="chip bg-color"><%= tag.name %></span>
+                    </a>
+                    <% }); %>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
