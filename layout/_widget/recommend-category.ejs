@@ -5,7 +5,7 @@
         topCategories = site.data.recommendCategories;
     } else {
         site.categories.forEach(function (category) {
-            if (category.top) {
+            if (category.top && category.title) {
                 topCategories.push(category);
             }
         });
